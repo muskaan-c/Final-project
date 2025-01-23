@@ -1,0 +1,133 @@
+/* Apply box-sizing to all elements for consistent sizing */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* setting a background color for webpages*/
+body{
+    background-color:#EAD7BC;
+}
+
+/*Class to make a border around every div */
+.section{ 
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: dotted;
+    background-color: #F6EEE3;
+} 
+
+/*designing h1*/
+h1{
+    color: black;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*for paragraph font's size and making the text in center*/
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: century-gothic, sans-serif;
+}
+
+/*Class to style the nav-bar*/
+.nav-bar{
+    background-color: #D3889D;
+    border-style: solid;
+}
+
+/* class for navigation bar links*/
+.nav-link{ 
+    display: inline-block;
+    background-color: #D388C3;
+    text-align: center;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: black;
+    border: 3px solid black;
+    text-decoration: none;
+}
+
+/*Changes the color of the nav bar link when you hover over it*/
+.nav-link:hover{
+    background-color: #D39988;
+}
+
+/* class for styling nav ul*/
+.nav-ul{
+    list-style: none;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+
+    /*Centering the elements in nav bar*/
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/*Class for the color of links for sources*/
+.links{
+    color: #0000D6;
+}
+
+/*Class to make the maps and embeded youtube video in center*/
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Class to set a background color of footer*/
+.footer-bcolor{
+    background-color: #D39988;
+}
+
+/*class for back to top link in footer*/
+.footer-link{
+    border: solid;
+    border: black;
+    color: black;
+    margin: 14px;
+    font-size: 25px;
+}
+
+/*class for text in footer*/
+.footer-text{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+    margin: 10px 0;
+}
+
+.social-icon {
+    width: 35px; /* Set the icon size */
+    height: 30px;
+    border-radius: 50%; /* Make the icons round */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.2); 
+}
+
+.footer-link {
+    text-decoration: none;
+}

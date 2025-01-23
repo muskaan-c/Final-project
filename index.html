@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!--Linking the external css to HTML-->
+    <link rel="stylesheet" href="CSS/stylesheet.css"/>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user scalable=yes">
+    <title>Bakery home page</title>
+
+    <style>
+        /* Center the heading */
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        /* Style for the "About Us" section */
+        .about-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        }
+    
+        .about-text {
+            width: 45%; /* Adjust as needed */
+            text-align: justify;
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+        }
+    
+        .about-text:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            opacity: 0.9; /* Dim effect */
+        }
+    
+        .about-text .span {
+            font-weight: bold;
+        }
+    
+        .about-image img {
+            width: 100%;
+            max-width: 550px; /* Limit image size */
+            height: auto;
+            border-radius: 8px;
+            border-style: solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+    
+        .about-image img:hover {
+            transform: scale(1.1); /* Enlarge image on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        }
+    
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .about-text {
+                width: 90%; /* Full width for smaller screens */
+            }
+    
+            .about-image img {
+                max-width: 300px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <header>
+        <!--Navigation bar for this webpage-->
+        <div class="nav-bar"><br>
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="index.html" class="nav-link">HOME PAGE</a></li>
+                    <li><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li><a href="gallery.html" class="nav-link">CAKE GALLERY</a></li>
+                    <li><a href="sign-up.html" class="nav-link">BECOME A MEMBER</a></li>
+                </ul>
+            </nav>
+            <h1><i>Cake Magic Bakery</i></h1>
+            </div><br><br><br>
+    </header>
+    <main>
+        <section>
+            <div class="about-section">
+            <div class="about-text">
+                <h2>About US</h2>
+                <p>At Cake Magic, we bring sweetness and creativity to every occasion!
+                    From custom cakes to classic treats, our passion is crafting magical 
+                    moments with every bite. Using the finest ingredients, we create desserts
+                    that are both beautiful and delicious.
+                </p>
+                <p><span class="span">Your Sweet Moments, Our Magical Touch</span></p>
+            </div>
+
+            <div class="about-image">
+            <figure>
+                <img src="images/cup-cake.jpg" alt="Cupcake"/>
+            </figure>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer of this webpage-->
+    <footer class="footer-bcolor"><br>
+        <ul class="footer-text">
+        <!-- Back to top link for this webpage -->
+            <li style="display: block;">
+                <a href="index.html" class="footer-link">Back to top</a>
+            </li>
+        </ul>
+        <div class="social-media">
+        <!-- Social media links -->
+            <a href="https://facebook.com" class="footer-link" target="_blank">
+                <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" class="footer-link" target="_blank">
+                <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" class="footer-link" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com" class="footer-link" target="_blank">
+                <img src="images/tiktok-icon.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+        <p class="footer-text">Copyright Cake Magic Bakery &copy;</p><br>
+    </footer>
+    
+</body>
+</html>

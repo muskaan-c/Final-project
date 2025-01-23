@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!--Linking the external css to HTML-->
+    <link rel="stylesheet" href="CSS/stylesheet.css"/>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user scalable=yes">
+    <title>menu page</title>
+
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EAD7BC;
+            color: black;
+        }
+    
+        /* Menu Section Grid Layout */
+        #menu-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+         /* Styling for image rows */
+        .image-row {
+            display: grid; /* Enables Grid layout */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts columns based on available space */
+            gap: 30px; /* Space between images */
+            justify-content: center;
+            margin-left: -3px;
+            margin-right: 5px;
+        }
+
+        .image-row img {
+            width: 100%; /* Images take up the full width of their grid cell */
+            max-width: 600px; /* Limit the maximum width */
+            height: 450px; /* Maintain aspect ratio */
+            border-radius: 10px;
+            border: 5px solid #333;
+        }
+    
+        /* Menu Content Styling */
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        /*to style the div around menu*/
+        .menu-section {
+            background-color: #F6EEE3;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+    
+        /* to style the heading of menu*/
+        .menu-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: black;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+    
+        .menu-options {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        /*to style menu list items*/
+        .menu-options li {
+            font-size: 1rem;
+            padding: 5px 0;
+            color: black;
+            border-bottom: 1px dotted #DDD;
+        }
+    
+        .menu-options li:last-child {
+            border-bottom: none;
+        }
+    
+        .menu-options li:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        <header>
+            <div class="nav-bar"><br>
+                <nav>
+                    <ul class="nav-ul">
+                        <li><a href="index.html" class="nav-link">HOME PAGE</a></li>
+                        <li><a href="menu.html" class="nav-link">MENU</a></li>
+                        <li><a href="gallery.html" class="nav-link">CAKE GALLERY</a></li>
+                        <li><a href="sign-up.html" class="nav-link">BECOME A MEMBER</a></li>
+                    </ul>
+                </nav>
+                <h1><i>Cake Gallery</i></h1>
+            </div><br><br><br>
+        </header>
+    
+        <main id="menu-section">
+            <figure class="image-row">
+                <img src="images/chocolate-cake.jpg" alt="Chocolate cake"/>
+                <img src="images/chocolate-croissant.jpg" alt="Chocolate Cake"/>
+            </figure>
+    
+            <!--Cake list in menu--> 
+            <div class="menu-container">
+                <div class="menu-section">
+                    <h2>Cakes</h2>
+                    <ul class="menu-options">
+                        <li>Chocolate Cake</li>
+                        <li>Vanilla Cake</li>
+                        <li>Carrot Cake</li>
+                        <li>Red Velvet Cake</li>
+                        <li>Cheescake</li>
+                        <li>Fruit Cake</li>
+                        <li>Tiramisu Cake</li>
+                        <li>Almond Cake</li>
+                        <li>Pistachio Cake</li>
+                        <li>Oreo Cheesecake</li>
+                        <li>Black Sesame Cake</li>
+                        <li>Chocolate Truffle Cake</li>
+                    </ul>
+                </div>
+    
+                <!--Pastries list in menu-->
+                <div class="menu-section">
+                    <h2>Pastries</h2>
+                    <ul class="menu-options">
+                        <li>Croissant</li>
+                        <li>Cream Puff</li>
+                        <li>Cinnamon Roll</li>
+                        <li>Glazed Donuts</li>
+                        <li>Fruit Tart</li>
+                        <li>Éclair</li>
+                        <li>Baklava</li>
+                        <li>Danish Pastry</li>
+                        <li>Palmiers</li>
+                        <li>Strudel</li>
+                        <li>Cannoli</li>
+                        <li>Apple Turnover</li>
+                    </ul>
+                </div>
+    
+                <!--Breads list in menu-->
+                <div class="menu-section">
+                    <h2>Breads</h2>
+                    <ul class="menu-options">
+                        <li>White Bread</li>
+                        <li>Whole Wheat Bread</li>
+                        <li>Multigrain Bread</li>
+                        <li>Baguette</li>
+                        <li>Pretzel Bread</li>
+                        <li>Cornbread</li>
+                        <li>Sourdough Bread</li>
+                        <li>Rye bread</li>
+                        <li>Brown Bread</li>
+                        <li>Ciabatta</li>
+                        <li>Pita</li>
+                        <li>Banana Bread</li>
+                    </ul>
+                </div>
+    
+                <!--Other items list in menu-->
+                <div class="menu-section">
+                    <h2>Other items</h2>
+                    <ul class="menu-options">
+                        <li>Macarons</li>
+                        <li>Chocolate Chip Cookies</li>
+                        <li>Oatmeal Raisin Cookies</li>
+                        <li>Chocolate Chip Muffins</li>
+                        <li>Blueberry Muffins</li>
+                        <li>English Muffins</li>
+                        <li>Apple Pie</li>
+                        <li>Pecan Pie</li>
+                        <li>Chocolate Tart</li>
+                        <li>Lemon Poppy Seed Muffins</li>
+                        <li>Custom Cakes</li>
+                        <li>Cupcakes</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <figure class="image-row">
+                <img src="images/macaron.jpg" alt="Macaron"/>
+                <img src="images/muffins.jpg" alt="Muffins"/>
+            </figure>
+        </main>
+    
+        <!--footer of this webpage-->
+        <footer class="footer-bcolor"><br>
+            <ul class="footer-text">
+            <!-- Back to top link for this webpage -->
+                <li style="display: block;">
+                    <a href="index.html" class="footer-link">Back to top</a>
+                </li>
+            </ul>
+            <div class="social-media">
+            <!-- Social media links -->
+                <a href="https://facebook.com" class="footer-link" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://twitter.com" class="footer-link" target="_blank">
+                    <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://instagram.com" class="footer-link" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://tiktok.com" class="footer-link" target="_blank">
+                    <img src="images/tiktok-icon.png" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+            <p class="footer-text">Copyright Cake Magic Bakery &copy;</p><br>
+        </footer>
+    
+    </body>
+    </html>

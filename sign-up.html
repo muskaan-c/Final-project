@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!--Linking the external css to HTML-->
+    <link rel="stylesheet" href="CSS/stylesheet.css"/>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user scalable=yes">
+    <title>sign-up</title>
+
+    <style>
+        /* Center alignment for section heading */
+        h2{
+            text-align: center; /* Centers the text horizontally */
+            margin-bottom: 20px; /* Adds some space below the heading */
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* ID for form container */
+        #form-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #F6EEE3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!--Navigation bar for this webpage-->
+        <div class="nav-bar"><br>
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="index.html" class="nav-link">HOME PAGE</a></li>
+                    <li><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li><a href="gallery.html" class="nav-link">CAKE GALLERY</a></li>
+                    <li><a href="sign-up.html" class="nav-link">BECOME A MEMBER</a></li>
+                </ul>
+            </nav>
+            <h1><i>Become a Member</i></h1>
+            </div><br><br><br>
+    </header>
+    <!-- Registration Section -->
+    <main>
+        <section>
+            <h2>Please fill out the form below to become a member with us</h1>
+            <p>By filling out this form u will become a member of Cake Magic Bakery.</p>
+            <!-- Fieldset for form container -->
+            <fieldset id="form-container">
+                <form action="index.html">
+                    <!-- Label and input for First Name -->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br><br>
+
+                    <!-- Label and input for Last Name -->
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br><br>
+
+                    <!-- Label and input for Email -->
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <!-- Label and input for Password -->
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+                    <!-- Label and input for Birthday -->
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="date" id="birthday" name="birthday" required><br><br>
+
+                    <!-- Submit and Reset Buttons -->
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </fieldset>
+        </section>
+        <br>
+    </main>
+
+    <!--footer of this webpage-->
+    <footer class="footer-bcolor"><br>
+        <ul class="footer-text">
+        <!-- Back to top link for this webpage -->
+            <li style="display: block;">
+                <a href="index.html" class="footer-link">Back to top</a>
+            </li>
+        </ul>
+        <div class="social-media">
+        <!-- Social media links -->
+            <a href="https://facebook.com" class="footer-link" target="_blank">
+                <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" class="footer-link" target="_blank">
+                <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" class="footer-link" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com" class="footer-link" target="_blank">
+                <img src="images/tiktok-icon.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+        <p class="footer-text">Copyright Cake Magic Bakery &copy;</p><br>
+    </footer>
+
+</body>
+</html>
